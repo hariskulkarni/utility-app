@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="../utility-app/styles/css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Unit Converter</h1>
+        <form>
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" required>
+            <label for="from-unit">From:</label>
+            <select id="from-unit" required>
+                <option value="meter">meter</option>
+                <option value="kilometer">kilometer</option>
+                <option value="centimeter">centimeter</option>
+                <option value="inch">inch</option>
+                <option value="foot">foot</option>
+                <option value="yard">yard</option>
+                <option value="mile">mile</option>
+            </select>
+            <label for="to-unit">To:</label>
+            <select id="to-unit" required>
+                <option value="meter">meter</option>
+                <option value="kilometer">kilometer</option>
+                <option value="centimeter">centimeter</option>
+                <option value="inch">inch</option>
+                <option value="foot">foot</option>
+                <option value="yard">yard</option>
+                <option value="mile">mile</option>
+            </select>
+            <button type="button" onclick="convertUnits()">Convert</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="../utility-app/scripts/js/script.js"></script>
+</body>
+
+</html>
